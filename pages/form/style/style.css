@@ -100,7 +100,7 @@ body {
 .delivery__date {
 	display: flex;
 	flex-direction: column;
-	margin-top: 1rem;
+	margin-top: 0rem;
 }
 
 .label__date-delivery {
@@ -126,7 +126,7 @@ body {
 /* Adress title */
 
 .adress__title {
-	margin: 1rem 0rem;
+	margin-bottom: 1rem;
 	font-size: 2rem;
 	font-weight: 500;
 	color: var(--text-color-idea);
@@ -158,7 +158,7 @@ body {
 .house__adress {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 2rem;
+	margin-top: 0rem;
 }
 
 .house__number {
@@ -190,7 +190,7 @@ body {
 /* Payment information */
 
 .payment__info-title {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	margin-bottom: 1rem;
 	font-size: 2rem;
 	font-weight: 500;
@@ -209,7 +209,7 @@ body {
 /* PAyment inforamtion */
 
 .choose__gifts-title {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	font-size: 2rem;
 	color: var(--text-color-idea);
 }
