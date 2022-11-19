@@ -1,0 +1,90 @@
+.red__message-name {
+	padding: 0em 1rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	color: rgb(199, 1, 1);
+	font-size: 1.4rem;
+	width: 20rem;
+	// visibility: hidden;
+}
+
+.red__message-surname {
+	padding: 0em 1rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	color: rgb(199, 1, 1);
+	font-size: 1.4rem;
+	width: 20rem;
+	// visibility: hidden;
+}
+
+.red__message-date {
+	padding: 0em 1rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	color: rgb(199, 1, 1);
+	font-size: 1.4rem;
+	width: 20rem;
+	// visibility: hidden;
+}
+
+.red__message-street {
+	padding: 0em 1rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	color: rgb(199, 1, 1);
+	font-size: 1.4rem;
+	width: 20rem;
+	// visibility: hidden;
+}
+
+.red__message-hause {
+	padding: 0em 1rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	color: rgb(199, 1, 1);
+	font-size: 1.4rem;
+	width: 20rem;
+	// visibility: hidden;
+}
+
+.red__message-flat {
+	padding: 0em 1rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	color: rgb(199, 1, 1);
+	font-size: 1.4rem;
+	width: 20rem;
+	// visibility: hidden;
+}
+
+.red__message-payment {
+	padding: 0em 1rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	color: rgb(199, 1, 1);
+	font-size: 1.4rem;
+	width: 20rem;
+	// visibility: hidden;
+}
+
+.i-name{
+    // border: 2px solid red;
+}
+
+.purchase {
+	padding: 1rem 2rem;
+	color: black;
+	// background-color: brown;
+	outline: none;
+	border: none;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.purchase:hover{
+    // git st
+}

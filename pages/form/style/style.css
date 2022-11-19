@@ -28,10 +28,10 @@ body {
 .wrapper {
 	position: relative;
 	width: 100%;
-	background: url('../../../assets/img/main-picture.jpg');
+	background: url('../../../assets/img/bg-form.jpg');
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
+	height: 900px;
 	z-index: 0;
 	display: flex;
 	justify-content: center;
@@ -74,18 +74,6 @@ body {
 	position: relative;
 }
 
-.message__name {
-	margin-top: 1rem;
-	position: absolute;
-	top: 95%;
-	background-color: #fff;
-	padding: 1rem;
-	border-radius: 15px;
-	color: rgb(255, 0, 0);
-	font-size: 1.4rem;
-	display: none;
-}
-
 .full__name-label {
 	font-size: 2rem;
 	color: var(--text-color-idea);
@@ -112,7 +100,7 @@ body {
 .delivery__date {
 	display: flex;
 	flex-direction: column;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 .label__date-delivery {
@@ -138,7 +126,7 @@ body {
 /* Adress title */
 
 .adress__title {
-	margin: 2rem 0;
+	margin: 1rem 0rem;
 	font-size: 2rem;
 	font-weight: 500;
 	color: var(--text-color-idea);
@@ -244,19 +232,6 @@ body {
 	justify-content: center;
 	margin-top: 2rem;
 }
-
-.purchase {
-	padding: 1rem 2rem;
-	color: black;
-	// background-color: brown;
-	outline: none;
-	border: none;
-	font-size: 1.4rem;
-	text-transform: uppercase;
-	border-radius: 15px;
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
-}
 // .purchase:hover{
 //   background-color: rgb(49, 107, 1);
 // }
@@ -286,4 +261,5 @@ body {
 	.house__number {
 		width: 15rem;
 	}
+
 }
