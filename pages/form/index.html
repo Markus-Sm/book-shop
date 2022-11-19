@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books shop</title>
+    <link rel="stylesheet" href="style/error.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,38 +23,43 @@
 
                     <div class="full__name-input-wrap">
                         <label for="name" class="full__name-label">Name</label>
-                        <input type="text" id="name" name="shipingDetails" class="input_fullName" placeholder="Name" pattern="\s*(\S\s*){5,}" title="Name should have at least 4 characters (no numbers)." required="" onKeyup="checkform()"/>
-                        <p class="message__name">Lorem ipsum dolor sit amet.</p>
+                        <input type="text" id="name" name="shipingDetails" class="input_fullName i-name" placeholder="Name" pattern="/^[A-Za-z]{4,}$/" title="Name should have at least 4 characters (no numbers)." required="" onKeyup="checkform()"/>
+                        <p class="red__message-name">* The field is invalid!</p>
                     </div>
                     
                     <div class="full__name-input-wrap">
                         <label for="surname" class="full__name-label">Surname</label>
-                        <input type="text" id="surname" name="shipingDetails" class="input_fullName" placeholder="Surname" pattern="\s*(\S\s*){5,}" title="Surname should have at least 5 characters." required="" />
+                        <input type="text" id="surname" name="shipingDetails" class="input_fullName i-surname" placeholder="Surname" pattern="/^[A-Za-z]{5,}$/" title="Surname should have at least 5 characters." required="" />
+                        <p class="red__message-surname">* The field is invalid!</p>
                     </div>
 
                 </div>
 
                 <div class="delivery__date">
                     <label for="dateDelivery" class="label__date-delivery">Delivery Date</label>
-                    <input type="date" id="dateDelivery" name="shipingDetails" class="input__date-delivery">
+                    <input type="date" id="dateDelivery" id="field_date" name="shipingDetails" class="input__date-delivery i-date" onkeydown="handleEnter(event)" required>
+                    <p class="red__message-date">* The field is invalid!</p>
                 </div>
 
                 <p class="adress__title">Adress</p>
 
                 <div class="street__inputs">
                     <label for="street" class="label__street">Street</label>
-                    <input type="text" id="street" class="street__input" placeholder="street" pattern="\s*(\S\s*){5,}" title="street should have at least 5 characters." required="" name="shipingDetails">
+                    <input type="text" id="street" class="street__input i-street" placeholder="street" pattern="\s*(\S\s*){5,}" title="street should have at least 5 characters." required="" name="shipingDetails">
+                    <p class="red__message-street">* The field is invalid!</p>
                 </div>
 
                 <div class="house__adress">
                     <div class="house__number">
                         <label for="houseNumber" class="house__label">House number</label>
-                        <input type="number" id="houseNumber" name="shipingDetails" placeholder="house number" class="inputs__haouse__adress" min="0" required="">
+                        <input type="number" id="houseNumber" name="shipingDetails" placeholder="house number" class="inputs__haouse__adress i-hause" min="0" required="">
+                        <p class="red__message-hause">* The field is invalid!</p>
                     </div>
 
                     <div class="house__number">
                         <label for="flatNumber" class="house__label">Flat number</label>
-                        <input type="number" id="flatNumber" name="shipingDetails" placeholder="flat number" class="inputs__haouse__adress" min="0" required="">
+                        <input type="number" id="flatNumber" name="shipingDetails" placeholder="flat number" class="inputs__haouse__adress i-flat" min="0" required="">
+                        <p class="red__message-flat">* The field is invalid!</p>
                     </div>
                 </div>
 
@@ -65,6 +71,7 @@
 
                     <label for="cash" class="label__payment">Cash</label>
                     <input type="radio" name="shipingDetails" required="">
+                    <p class="red__message-payment">* The field is invalid!</p>
                 </div>
 
                 <p class="choose__gifts-title">Choose 2 gifts (optional)</p>
