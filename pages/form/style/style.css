@@ -48,6 +48,7 @@ body {
 }
 
 .form {
+	position: relative;
 	width: 50rem;
 	height: fit-content;
 	margin: 5rem 0;
@@ -240,6 +241,21 @@ body {
 	margin-top: 2rem;
 }
 
+.close{
+	display: flex;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);
+	color: #fff;
+	border-radius: 50%;
+	padding: 1rem;
+	z-index: 5;
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+	text-align: center;
+	font-size: 1rem;
+}
+
 
 // .purchase:hover{
 //   background-color: rgb(49, 107, 1);
@@ -272,3 +288,27 @@ body {
 	}
 
 }
+
+/*=============================*/
+/*=========Media Height=========*/
+/*=============================*/
+
+@media (max-height: 1250px) {
+	.wrapper{
+		height: 1100px;
+	}
+}
+
+@media (max-height: 900px) {
+	.wrapper{
+		height: 900px;
+	}
+}
+
+
+@media (max-height: 1000px) {
+	.wrapper{
+		height: 1000px;
+	}
+}
+
