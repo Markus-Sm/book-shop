@@ -1,43 +1,11 @@
-.red__message{
-    padding: 0em 1rem;
-	margin-top: 1rem;
-	border-radius: 10px;
-	color: rgb(199, 1, 1);
-	font-size: 1.4rem;
-	width: 20rem;
-}
-
-.red__message-name {
-	visibility: hidden;
-}
-
-.red__message-surname {
-	visibility: hidden;
-}
-
-.red__message-date {
-	visibility: hidden;
-}
-
-.red__message-street {
-	visibility: hidden;
-}
-
-.red__message-hause {
-	visibility: hidden;
-}
-
-.red__message-flat {
-	visibility: hidden;
-}
-
-.red__message-payment {
-	visibility: hidden;
-}
-
-.i-name{
-    // border: 2px solid red;
-}
+// .red__message{
+//     padding: 0em 1rem;
+// 	margin-top: 1rem;
+// 	border-radius: 10px;
+// 	color: rgb(199, 1, 1);
+// 	font-size: 1.4rem;
+// 	width: 20rem;
+// }
 
 .purchase {
 	padding: 1rem 2rem;
@@ -52,6 +20,21 @@
 	cursor: pointer;
 }
 
-.purchase:hover{
-    // git st
+.message{
+	height: 3.5rem;
+	width: 20rem;
+	overflow: hidden;
 }
+
+.info{
+	font-size: 1.4rem;
+	position: absolute;
+	bottom: -.3rem;
+	max-width: 20rem;
+}
+
+.invalid{
+	border: rgb(154, 3, 3);
+	
+}
+
