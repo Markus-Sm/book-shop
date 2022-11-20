@@ -1,0 +1,40 @@
+#cart-icon{
+    width: 1.8rem;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.product__img{
+    background-color: rgb(214, 226, 191);
+    border-radius: 15PX;
+    width: 2rem;
+    border: 2px solid #333;
+}
+.product__img:hover{
+    background-color: rgb(195, 234, 123);
+}
+
+.product__img:active{
+    background-color: green;
+}
+
+
+.show-more{
+    padding: .4rem .8rem;
+    border: 0;
+    transition: all .3s ease-in-out;
+    border-radius: 15px;
+    background-color: rgb(139, 162, 230);
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.show-more:hover{
+    background-color: rgb(98, 136, 250);
+}
+.show-more:active{
+    background-color: green;
+}

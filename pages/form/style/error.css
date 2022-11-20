@@ -1,0 +1,40 @@
+// .red__message{
+//     padding: 0em 1rem;
+// 	margin-top: 1rem;
+// 	border-radius: 10px;
+// 	color: rgb(199, 1, 1);
+// 	font-size: 1.4rem;
+// 	width: 20rem;
+// }
+
+.purchase {
+	padding: 1rem 2rem;
+	color: black;
+	// background-color: brown;
+	outline: none;
+	border: none;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.message{
+	height: 3.5rem;
+	width: 20rem;
+	overflow: hidden;
+}
+
+.info{
+	font-size: 1.4rem;
+	position: absolute;
+	bottom: -.3rem;
+	max-width: 20rem;
+}
+
+.invalid{
+	border: rgb(154, 3, 3);
+	
+}
+

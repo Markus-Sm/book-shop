@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books shop</title>
+    <link rel="stylesheet" href="style/error.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="shadow"></div>
+
+        <form class="form" name="theform">
+            <a href="../main/index.html" class="close">❌</a>
+            <div class="wrapper__form">
+
+                <div class="full__name-inputs">
+
+                    <div class="full__name-input-wrap">
+                        <label for="name" class="full__name-label">Name</label>
+                        <input type="text" id="name" name="name" class="input_fullName i-name shipingDetails" placeholder="Name" required/>
+                        <div class="message"></div>
+                    </div>
+                    
+                    <div class="full__name-input-wrap">
+                        <label for="surname" class="full__name-label">Surname</label>
+                        <input type="text" id="surname" name="surname" class="input_fullName i-surname shipingDetails" placeholder="Surname"  required/>
+                        <div class="message"></div>
+                    </div>
+
+                </div>
+
+                <div class="delivery__date">
+                    <label for="dateDelivery" class="label__date-delivery">Delivery Date</label>
+                    <input type="date" id="dateDelivery" id="field_date" name="date" class="input__date-delivery i-date shipingDetails" required>
+                    <div class="message"></div>
+                </div>
+
+                <p class="adress__title">Adress</p>
+
+                <div class="street__inputs">
+                    <label for="street" class="label__street">Street</label>
+                    <input type="text" id="street" class="street__input i-street shipingDetails" placeholder="street" name="street" required>
+                    <div class="message txt"></div>
+                </div>
+
+                <div class="house__adress">
+                    <div class="house__number">
+                        <label for="houseNumber" class="house__label">House number</label>
+                        <input type="number" id="houseNumber" name="house" placeholder="house number" class="inputs__haouse__adress i-hause shipingDetails" min="1" required>
+                        <div class="message"></div>
+                    </div>
+
+                    <div class="house__number">
+                        <label for="flatNumber" class="house__label">Flat number</label>
+                        <input type="number" id="flatNumber" name="flat" placeholder="flat number" class="inputs__haouse__adress i-flat shipingDetails" min="1" required>
+                        <div class="message"></div>
+                    </div>
+                </div>
+
+                <p class="payment__info-title">Payment information</p>
+                
+                <div class="paymant__info">
+                    <label for="card" class="label__payment">Card</label>
+                    <input type="radio" name="payment" id="card" value="Card" checked class="payment__radio-1" required>
+
+                    <label for="cash" class="label__payment">Cash</label>
+                    <input type="radio" name="payment" value="Cash" id="cash" required>
+                </div>
+
+                <p class="choose__gifts-title">Choose 2 gifts (optional)</p>
+
+                <div class="choose__gifts">
+                    <div class="choose__gifts-wrap">
+                        <input type="checkbox" id="gift" name="shipingDetails">
+                        <label for="gift" class="choose__gifts-label">pack as a gift</label>
+
+                        <input type="checkbox" id="postcard" class="input__postcard" name="shipingDetails">
+                        <label for="postcard" class="choose__gifts-label">add postcard</label>
+                    </div>
+
+                    <div class="choose__gifts-wrap">
+                        <input type="checkbox" id="discount" name="shipingDetails">
+                        <label for="discount" class="choose__gifts-label">provide 2% discount to the next time</label>
+                    </div>
+
+                    <div class="choose__gifts-wrap">
+                        <input type="checkbox" id="branded" name="shipingDetails">
+                        <label for="branded" class="choose__gifts-label">branded pen or pencil</label>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="purchase" name="submit" class='purchase' id="submit">
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

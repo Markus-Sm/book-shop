@@ -1,0 +1,314 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-color: #fd4646;
+	--text-color: #171427;
+	--bg-color: #fff;
+	--text-color-idea: rgb(5, 61, 54);
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: rgb(169, 0, 0);
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	background: url('../../../assets/img/bg-form.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 1000px;
+	z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(5, 48, 42, 0.842);
+	z-index: 0;
+}
+
+.form {
+	position: relative;
+	width: 50rem;
+	height: fit-content;
+	margin: 5rem 0;
+	background-color: rgba(255, 255, 255, 0.527);
+	border-radius: 30px;
+	z-index: 1;
+}
+
+.wrapper__form {
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.full__name-inputs {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.full__name-input-wrap {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.full__name-label {
+	font-size: 2rem;
+	color: var(--text-color-idea);
+	margin-bottom: 0.5rem;
+}
+
+.input_fullName {
+	padding: 1rem;
+	border-radius: 15px;
+	font-size: 1.4rem;
+	width: 20rem;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.726);
+}
+.input_fullName:hover,
+.input_fullName:active {
+	background-color: rgba(217, 243, 211, 0.637);
+	color: rgb(15, 44, 1);
+}
+
+/* Delivery date */
+
+.delivery__date {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0rem;
+}
+
+.label__date-delivery {
+	font-size: 2rem;
+	color: var(--text-color-idea);
+	margin-bottom: 0.5rem;
+}
+
+.input__date-delivery {
+	padding: 1rem;
+	font-size: 1.4rem;
+	border-radius: 15px;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.726);
+	transition: all 0.3s ease-in-out;
+}
+.input__date-delivery:hover,
+.input__date-delivery:active {
+	background-color: rgba(217, 243, 211, 0.637);
+	color: rgb(15, 44, 1);
+}
+
+/* Adress title */
+
+.adress__title {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--text-color-idea);
+	position: relative;
+}
+
+.label__street {
+	color: var(--text-color-idea);
+	font-size: 2rem;
+}
+
+.street__inputs{
+	position: relative;
+}
+
+.street__input {
+	margin-top: 0.5rem;
+	padding: 1rem;
+	font-size: 1.4rem;
+	width: 100%;
+	outline: none;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+	background-color: rgba(255, 255, 255, 0.726);
+}
+.street__input:hover,
+.street__input:active {
+	background-color: rgba(217, 243, 211, 0.637);
+	color: rgb(15, 44, 1);
+}
+
+/* HAUSE ADRESS*/
+
+.house__adress {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0rem;
+}
+
+.house__number {
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+	position: relative;
+}
+
+.house__label {
+	font-size: 2rem;
+	color: var(--text-color-idea);
+	margin-bottom: 0.5rem;
+}
+
+.inputs__haouse__adress {
+	padding: 1rem;
+	border-radius: 15px;
+	font-size: 1.4rem;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+	background-color: rgba(255, 255, 255, 0.726);
+}
+.inputs__haouse__adress:hover,
+.inputs__haouse__adress:active {
+	background-color: rgba(217, 243, 211, 0.637);
+	color: rgb(15, 44, 1);
+}
+
+/* Payment information */
+
+.payment__info-title {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--text-color-idea);
+}
+
+.label__payment {
+	font-size: 2rem;
+	color: var(--text-color-idea);
+}
+
+.payment__radio-1 {
+	margin-right: 0.5rem;
+}
+
+/* PAyment inforamtion */
+
+.choose__gifts-title {
+	margin-top: 1rem;
+	font-size: 2rem;
+	color: var(--text-color-idea);
+}
+
+.choose__gifts-label {
+	font-size: 1.5rem;
+	color: var(--text-color-idea);
+}
+
+.choose__gifts-wrap {
+	margin-top: 1rem;
+}
+
+.input__postcard {
+	margin-left: 1rem;
+}
+
+.submit {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.close{
+	display: flex;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);
+	color: #fff;
+	border-radius: 50%;
+	padding: 1rem;
+	z-index: 5;
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+	text-align: center;
+	font-size: 1rem;
+}
+
+
+// .purchase:hover{
+//   background-color: rgb(49, 107, 1);
+// }
+
+// .purchase:active{
+//   background-color: green;
+// }
+
+/*===============*/
+/* Breakpoints */
+/*===============*/
+
+@media (max-width: 800px) {
+	.wrapper {
+		height: 120vh;
+	}
+
+	.form {
+		width: 38rem;
+	}
+
+	.input_fullName {
+		width: 15rem;
+		font-size: 1.3rem;
+	}
+
+	.house__number {
+		width: 15rem;
+	}
+
+}
+
+/*=============================*/
+/*=========Media Height=========*/
+/*=============================*/
+
+@media (max-height: 1250px) {
+	.wrapper{
+		height: 1100px;
+	}
+}
+
+@media (max-height: 900px) {
+	.wrapper{
+		height: 900px;
+	}
+}
+
+
+@media (max-height: 1000px) {
+	.wrapper{
+		height: 1000px;
+	}
+}
+
