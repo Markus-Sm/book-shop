@@ -43,7 +43,6 @@ function validateForm(event) {
 	} else {
 		form.submit.setAttribute('disabled', '')
         const purchase = document.querySelector('.purchase')
-		purchase.style = 'cursor: not-allowed'
 	}
 	function setInvalid(message) {
 		if(!currentInput.classList.contains('invalid'))
