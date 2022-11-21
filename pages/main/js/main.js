@@ -162,7 +162,7 @@ draggableElement.forEach(element => {
 })
 
 
-for (const dropZone of document.querySelectorAll('.product-box')){
+for (const dropZone of document.querySelectorAll('.drop-zone')){
     dropZone.addEventListener("dragover", e => {
         e.preventDefault();
     });
@@ -171,9 +171,12 @@ for (const dropZone of document.querySelectorAll('.product-box')){
         e.preventDefault();
 
         const dropElementId = e.dataTransfer.getData('text/plain');
-        const div = document.createElement('div');
-        const cart = document.querySelectorAll('.cart');
-        const active = document.querySelectorAll('.active')
+        // const div = document.createElement('div');
+        // div.classList.add('created');
+        
+        // dropElementId = div;
+
+        // cart_content.append(dropElementId);
         
         
     })

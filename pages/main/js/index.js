@@ -44,7 +44,7 @@ my_bag.append(img__bag);
 
 
 const cart_order = document.createElement('div');
-cart_order.classList.add('cart');
+cart_order.classList.add('cart', 'drop-zone');
 header.append(cart_order);
 
 const cart_title = document.createElement('h2');
@@ -53,7 +53,7 @@ cart_title.textContent = 'Order books 🛒';
 cart_order.append(cart_title);
 
 const cart_content = document.createElement('div');
-cart_content.classList.add('cart-content');
+cart_content.classList.add('cart-content', 'drop-zone');
 cart_order.append(cart_content);
 
 const total = document.createElement('div');
@@ -98,7 +98,7 @@ section_title.textContent = 'Book Catalog 📚';
 section_shop.append(section_title);
 
 const shop_content = document.createElement('div');
-shop_content.classList.add('shop-content');
+shop_content.classList.add('shop-content', 'drop-zone');
 shop_content.setAttribute('id', 'catalog');
 section_shop.append(shop_content);
 
