@@ -147,4 +147,37 @@ btnShow.forEach(btn => {
 });
 
 
+/* DRAG AND DROP */
+
+const draggableElement = document.querySelectorAll("#draggableElement");
+
+draggableElement.forEach(element => {
+    element.addEventListener("dragstart", e => {
+        console.log(e.target.parentElement);
+        e.dataTransfer.setData("text/plain", draggableElement.id)
+    
+        cart_order.classList.add('active')
+    
+    })
+})
+
+
+for (const dropZone of document.querySelectorAll('.product-box')){
+    dropZone.addEventListener("dragover", e => {
+        e.preventDefault();
+    });
+
+    dropZone.addEventListener('drop', e => {
+        e.preventDefault();
+
+        const dropElementId = e.dataTransfer.getData('text/plain');
+        const div = document.createElement('div');
+        const cart = document.querySelectorAll('.cart');
+        const active = document.querySelectorAll('.active')
+        
+        
+    })
+}
+
+
 

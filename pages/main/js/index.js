@@ -107,7 +107,7 @@ const catalog = document.getElementById('catalog');
 const markup = books.reduce((acc, value) => {
 	return `
     <div class="product-box" id="product-box-id-${value.id}">
-        <img src="${value.img}" alt="img of book" class="product-img">
+        <img src="${value.img}" alt="img of book" class="product-img" id="draggableElement" draggable="true">
         <h2 class="product-title">${value.title}</h2>
         <p class="product-author">${value.author}</p>
         <span class="price">${value.price}$</span>
