@@ -169,15 +169,8 @@ for (const dropZone of document.querySelectorAll('.drop-zone')){
 
     dropZone.addEventListener('drop', e => {
         e.preventDefault();
-
-        const dropElementId = e.dataTransfer.getData('text/plain');
-        // const div = document.createElement('div');
-        // div.classList.add('created');
-        
-        // dropElementId = div;
-
-        // cart_content.append(dropElementId);
-        
+        cart_order.classList.remove('active')
+        const dropElementId = e.dataTransfer.getData('text/plain');      
         
     })
 }
