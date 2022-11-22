@@ -258,14 +258,30 @@ header{
     font-weight: 500;
 }
 
-/* footer */
+/* Footer */
 
-.footer{
-    font-size: 1rem;
-    text-align: center;
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    border-top: solid .3rem var(--text-color-idea);
     padding: 1rem 0;
     background-color: var(--text-color-idea);
-    color: var(--bg-color)
+}
+
+.footer-content{
+    font-size: 1.6rem;
+}
+
+.footer-content img{
+    width: 5rem;
+    height: 3rem;
+}
+
+.footer-content p{
+    color: #fff;
+    font-size: 1rem;
 }
 
 
@@ -316,16 +332,14 @@ header{
         height: auto;
     }
 
-    // .product-box{
-    //     width: 80%;
-    // }
+    .footer-content img{
+        width: 3rem;
+        height: 2rem;
+    }
 
-    // .shop-content{
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     justify-content: center;
-    // }
+    .footer-content p{
+        font-size: .8rem;
+    }
 }
 
 

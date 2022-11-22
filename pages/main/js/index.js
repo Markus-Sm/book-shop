@@ -126,17 +126,30 @@ catalog.innerHTML = markup;
 const footer = document.createElement('footer');
 body.append(footer);
 
-const footer_div = document.createElement('div');
-footer_div.classList.add('footer');
-footer.append(footer_div);
+const footer_content = document.createElement('div');
+footer_content.classList.add('footer-content');
+footer.append(footer_content);
 
-const footer_text = document.createElement('p');
-footer_text.classList.add('footer__text');
-footer_text.textContent = 'Book shop - Art of coding 💎 © 2022';
-footer_div.append(footer_text);
+const aLink = document.createElement('a');
+aLink.setAttribute('href', "https://github.com/Markus-Sm")
+aLink.setAttribute('target', "_blank");
+footer_content.append(aLink);
 
+const img = document.createElement('img');
+img.setAttribute('src', "../../assets/icons/git.svg");
+img.setAttribute('alt', "github-id-link");
+aLink.append(img)
 
+const p = document.createElement('p');
+p.innerText = "Marek Samofał © 2022";
+footer_content.append(p);
 
-  
+const aRs = document.createElement('a');
+aRs.setAttribute('href', "https://rs.school/js-en/");
+aRs.setAttribute('target', "_blank");
+footer_content.append(aRs);
 
-
+const imgRs = document.createElement('img');
+imgRs.setAttribute('src', "../../assets/icons/rss.svg");
+imgRs.setAttribute('alt', "RSSchool");
+aRs.append(imgRs)
