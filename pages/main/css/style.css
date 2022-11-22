@@ -76,6 +76,12 @@ header{
     right: 0;
 }
 
+.cart-content{
+    max-height: 450px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 .cart-title{
     text-align: center;
     font-size: 1.5rem;
@@ -89,6 +95,7 @@ header{
     gap: 1rem;
     margin-top: 1rem;
 }
+
 .cart-img{
     width: 100px;
     object-fit: contain;
