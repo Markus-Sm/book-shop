@@ -11,6 +11,8 @@ const body = document.querySelector('body');
 const documentFragment = document.createDocumentFragment();
 body.append(documentFragment);
 
+/* HEADER */
+
 const header = document.createElement('header');
 body.append(header);
 
@@ -41,7 +43,6 @@ img__bag.setAttribute('src', '../../assets/icons/bag.png');
 img__bag.setAttribute('id', 'cart-icon');
 img__bag.setAttribute('alt', 'icon of bag');
 my_bag.append(img__bag);
-
 
 const cart_order = document.createElement('div');
 cart_order.classList.add('cart', 'drop-zone');
@@ -85,6 +86,8 @@ close_cart.setAttribute('src', '../../assets/icons/x.png');
 close_cart.setAttribute('id', 'close-cart');
 cart_order.append(close_cart);
 
+
+/* MAIN */
 const main = document.createElement('main');
 body.append(main);
 
@@ -106,8 +109,8 @@ const catalog = document.getElementById('catalog');
 
 const markup = books.reduce((acc, value) => {
 	return `
-    <div class="product-box" id="product-box-id-${value.id}">
-        <img src="${value.img}" alt="img of book" class="product-img" id="draggableElement" draggable="true">
+    <div class="product-box" id="product-box-id-${value.id}" id="draggableElement" draggable="true">
+        <img src="${value.img}" alt="img of book" class="product-img">
         <h2 class="product-title">${value.title}</h2>
         <p class="product-author">${value.author}</p>
         <span class="price">${value.price}$</span>
@@ -123,6 +126,9 @@ const markup = books.reduce((acc, value) => {
 
 catalog.innerHTML = markup;
 
+
+
+/* FOOTER */
 const footer = document.createElement('footer');
 body.append(footer);
 

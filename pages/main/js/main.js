@@ -149,31 +149,24 @@ btnShow.forEach(btn => {
 
 /* DRAG AND DROP */
 
-const draggableElement = document.querySelectorAll("#draggableElement");
 
-draggableElement.forEach(element => {
-    element.addEventListener("dragstart", e => {
-        console.log(e.target.parentElement);
-        e.dataTransfer.setData("text/plain", draggableElement.id)
-    
-        cart_order.classList.add('active')
-    
+
+const draggables = document.querySelectorAll('.draggable');
+const containers = document.querySelectorAll('.container');
+
+draggables.forEach(draggable => {
+    draggable.addEventListener('dragstart', () => {
+        draggable.classList.add('dragging')
+    })
+
+    draggable.addEventListener('dragend', () => {
+        draggable.classList.remove('dragging')
     })
 })
 
-
-for (const dropZone of document.querySelectorAll('.drop-zone')){
-    dropZone.addEventListener("dragover", e => {
-        e.preventDefault();
-    });
-
-    dropZone.addEventListener('drop', e => {
-        e.preventDefault();
-        cart_order.classList.remove('active')
-        const dropElementId = e.dataTransfer.getData('text/plain');      
-        
+containers.forEach(container => {
+    container.addEventListener('dragover', () => {
+        const draggable = document.querySelector('.dragging')
+        container.appendChild(draggable)
     })
-}
-
-
-
+})
